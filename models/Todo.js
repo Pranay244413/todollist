@@ -1,0 +1,9 @@
+const mongoose = require('mongoose');
+
+const todoSchema = new mongoose.Schema({
+  value: String,
+  checked: Boolean,
+  color: String
+});
+
+module.exports = mongoose.model('Todo', todoSchema);
